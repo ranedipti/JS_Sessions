@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.wrapper{width: 300px;margin: 0 auto;text-align: center;}
+		img{width: 200px;height: 400px;margin: 10px 0;}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<button onclick="btnChange('gold')">Gold</button>
+		<button onclick="btnChange('black')">Black</button>
+		<button onclick="btnChange('blue')">Blue</button>
+		<button onclick="btnChange('rgold')">Rose Gold</button>
+		<div id="imgdv"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	function btnChange(data) {	
+		var day="";
+		switch (data) {
+		case 'gold':
+			// alert(1);
+	        day="<img src='gold.jpeg'>";
+	        break;
+	    case 'black':
+	    	// alert(2);
+	        day="<img src='black.jpeg'>";
+	        break;
+	    case 'blue':
+	    	// alert(3);
+	        day="<img src='blue.jpeg'>";
+	        break;
+	    case 'rgold':
+	    	// alert(4);
+	        day="<img src='rose-gold.jpeg'>";
+	        break;   
+		}
+		document.getElementById("imgdv").innerHTML=day;
+	}
+
+</script>
+</html>
